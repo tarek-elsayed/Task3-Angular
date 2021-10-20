@@ -1,0 +1,5 @@
+<div *ngFor="let item of taskList, let i = index">
+    <span {{item}}></span>
+    <button (click)="deleteTask(i)" [hidden]= "visapla">Delete</button>
+    
+</div>
